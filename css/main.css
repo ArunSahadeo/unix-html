@@ -6,51 +6,31 @@ body {
 	box-sizing: border-box;
 }
 
-.tty-box {
-	text-align: center;
-	margin: 50% 0;
+.tty {
+  color: #eee;
+	font-family: "Courier New";
+  padding-left: 40px;
 }
 
 .prompt {
 	font-size: 40px;
-	font-family: "Courier New";
-	color: #eee;
-	display: inline;
-	margin-right: 15px;
-}
-
-.on-off {
-	animation: blinker 1s linear infinite;
+  	margin-left: -40px;
+  	margin-right: 10px;
 }
 
 .stdin {
-	border: none;
-	background-color: transparent;
-	color: #eee;
-	font-family: monospace;
-	font-size: 30px;
-	display: inline;
+  word-break: break-all;
+  font-size: 36px;
 }
 
-.stdin:focus {
-	outline-width: 0;
+.caret {
+  display: inline-flex;
+  width: 12px;
+  height: 30px;
+  background-color: green;
+  animation: caret 1s linear infinite;
 }
 
-input[name='consoleCommand'] {
-	border: none;
-	background-color: transparent;
-	color: transparent;
-        text-shadow: #eee 0 0;	
-	font-family: monospace;
-	font-size: 30px;
-	background: url('../img/input-caret.gif') no-repeat;
-	width: 200px;
-}
-
-input[name='consoleCommand']:focus {
-	outline-width: 0;
-}
-
-@keyframes blinker {
-	50% { opacity: 0; }
+@keyframes caret {
+  50% { opacity: 0; }
 }
