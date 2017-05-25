@@ -1,0 +1,56 @@
+body {
+	background: #000;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.tty-box {
+	text-align: center;
+	margin: 50% 0;
+}
+
+.prompt {
+	font-size: 40px;
+	font-family: "Courier New";
+	color: #eee;
+	display: inline;
+	margin-right: 15px;
+}
+
+.on-off {
+	animation: blinker 1s linear infinite;
+}
+
+.stdin {
+	border: none;
+	background-color: transparent;
+	color: #eee;
+	font-family: monospace;
+	font-size: 30px;
+	display: inline;
+}
+
+.stdin:focus {
+	outline-width: 0;
+}
+
+input[name='consoleCommand'] {
+	border: none;
+	background-color: transparent;
+	color: transparent;
+        text-shadow: #eee 0 0;	
+	font-family: monospace;
+	font-size: 30px;
+	background: url('../img/input-caret.gif') no-repeat;
+	width: 200px;
+}
+
+input[name='consoleCommand']:focus {
+	outline-width: 0;
+}
+
+@keyframes blinker {
+	50% { opacity: 0; }
+}
