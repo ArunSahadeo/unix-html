@@ -6,6 +6,31 @@ const withCaret = (value) => `${value}<span class="caret"></span>`;
 let command = '';
 document.onkeydown = (evt) => {
   // Handle any shortcuts you want
+  /* Enter key */
+  if (evt.keyCode === 13 || evt.key === 13) {
+  	return false;
+  }
+  /* Alt key */
+  if (evt.keyCode === 18 || evt.key === 18) {
+   	return false;
+  }
+  /* Shift key */
+  if (evt.keyCode === 16 || evt.key === 16) {
+  	return false;
+  }
+  /* F5 */
+  if (evt.keyCode === 116 || evt.key === 116) {
+  	return false;
+  }
+  /* Ctrl key */
+  if (evt.keyCode === 17 || evt.key === 17) {
+  	return false;
+  }
+  /* TAB */
+  if (evt.keyCode === 9 || evt.key === 9) {
+  	return false;
+  }
+ 
   switch (evt.key) {
   	case 'Enter':
   		console.log(command);
