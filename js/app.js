@@ -16,7 +16,7 @@ document.onkeydown = (evt) => {
     	command = command.slice(0, command.length - 1);
       break;
     case 'F5':
-     	:
+     	// Do nothing
       break;
     default:
     	command += evt.key;
