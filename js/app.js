@@ -18,6 +18,9 @@ document.onkeydown = (evt) => {
     case 'F5':
      	// Do nothing
       break;
+    case 'Alt':
+    	// Do nothing
+      break;
     default:
     	command += evt.key;
       break;
