@@ -21,19 +21,21 @@ document.onkeydown = (evt) => {
     case 'Alt':
     	// Do nothing
       break;
+    case 'Shift':
+    	// Do nothing
+      break;
     default:
     	command += evt.key;
       break;
  	}
 
   input.innerHTML = withCaret(command);
-
+  
   switch (command) {
-  	case 'pwd':
-  	console.log("This is it");
-  	break;
-  	default:
-  	console.log("Invalid input");
+  	case 'Man help':
+  		if (document.querySelector('.man-page').classList.contains('paused-fade')) {
+  			document.querySelector('.man-page').classList.remove('paused-fade');
+  		}
   	break;
   }
 
