@@ -50,8 +50,26 @@ html, body {
   height: 100%;
   position: relative;
 }
+.man-page-inner h3, p {
+  padding: 0 20px;
+}
+.man-page-inner h3 {
+  text-transform: uppercase;
+  color: #d19200;
+}
 .man-page-inner p {
   color: #fff;
+  font-size: 25px;
+}
+.man-page-inner ul {
+  color: #fff;
+  font-size: 21px;
+}
+.man-page-inner ul li {
+  list-style: none;
+}
+.man-page-inner .keyword-blog {
+  font-weight: 700;
 }
 @keyframes fadeIn {
   to {
