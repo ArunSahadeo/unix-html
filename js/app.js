@@ -33,11 +33,14 @@ document.onkeydown = (evt) => {
   
   switch (command) {
   	case 'Man help':
+    case 'man help':
   		if (document.querySelector('.man-page').classList.contains('paused-fade')) {
   			document.querySelector('.man-page').classList.remove('paused-fade');
   		}
   	break;
+    case 'whoami':
+      input.innerHTML = withCaret("Arun Sahadeo");
+    break;
   }
-
 }
 }
